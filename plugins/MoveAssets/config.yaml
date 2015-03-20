@@ -1,0 +1,13 @@
+name: MoveAssets
+version: 0.01
+
+description: <__trans phrase="Move assets when changing site path.">
+plugin_link: https://github.com/masiuchi/mt-plugin-move-assets
+
+author_name: Masahiro Iuchi
+author_link: https://www.facebook.com/masahiro.iuchi
+
+applications:
+  cms:
+    callbacks:
+      cms_post_save.blog: $MoveAssets::MoveAssets::Callback::move_assets

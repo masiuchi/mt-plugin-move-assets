@@ -11,8 +11,10 @@ sub move_assets {
         return 1;
     }
 
-    my @blog_ids
-        = ( $obj->id, $obj->is_blog ? () : ( map { $_->id } $obj->blogs ), );
+    my @blog_ids = $obj->id;
+    if ( !$obj->is_blog ) {
+        push @blog_ids, ( map { $_->id } $obj->blogs );
+    }
 
     require File::Copy;
     my ( %site_paths, %archive_paths );

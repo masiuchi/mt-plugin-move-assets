@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 sub move_assets {
-    my ( $cb, $obj, $orig ) = @_;
+    my ( $cb, $app, $obj, $orig ) = @_;
 
     if (   $obj->site_path eq $orig->site_path
         && $obj->archive_path eq $orig->archive_path )

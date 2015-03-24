@@ -7,5 +7,7 @@ plugin_link: https://github.com/masiuchi/mt-plugin-move-assets
 author_name: Masahiro Iuchi
 author_link: https://www.facebook.com/masahiro.iuchi
 
-callbacks:
-  MT::Blog::post_save: $MoveAssets::MoveAssets::Callback::move_assets
+applications:
+  cms:
+    callbacks:
+      cms_post_save.blog: $MoveAssets::MoveAssets::Callback::move_assets

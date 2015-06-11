@@ -1,2 +1,5 @@
-# mt-plugin-move-assets
-Move assets when changing site path.
+# MoveAssets
+サイトパス／アーカイブパス変更時に、アイテムのパスも変更する Movable Type プラグイン
+
+## ライセンス
+MIT License

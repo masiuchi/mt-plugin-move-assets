@@ -7,6 +7,8 @@ plugin_link: https://github.com/masiuchi/mt-plugin-move-assets
 author_name: Masahiro Iuchi
 author_link: https://www.facebook.com/masahiro.iuchi
 
+l10n_class: MoveAssets::L10N
+
 applications:
   cms:
     callbacks:

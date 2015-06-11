@@ -1,5 +1,5 @@
 name: MoveAssets
-version: 0.03
+version: 0.04
 
 description: <__trans phrase="Move assets when changing site path.">
 plugin_link: https://github.com/masiuchi/mt-plugin-move-assets
